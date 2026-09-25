@@ -4,6 +4,15 @@
 
 Constellation is an investigative intelligence platform engineered for law enforcement, regulatory bodies, and intelligence analysts. It couples graph analytics, autonomous multi-step reasoning, probabilistic entity resolution, and tamper-evident cryptographic ledgers into an integrated investigative operating environment.
 
+### 🌟 What Makes Us Unique
+What sets Constellation apart is our **Flagship Idea: The Collaborative AI-Human Workspace**. We believe in synergy rather than replacement. The workspace allows human intelligence to direct the investigation while the AI (Byomkesh) handles heavy data retrieval, multi-hop reasoning, and contradiction checks. 
+
+### 🎨 Creative Freedom & Seamless Navigation
+We exercised special creative freedom to build a platform that doesn't feel like archaic enterprise software. Our focus on **Seamless Navigation** ensures that investigators can fluidly move between the spatial graph canvas, evidence dossiers, and AI chat without losing context. 
+
+### 🚀 Future Vision: Digital Infrastructure & OSINT
+Our future vision for Constellation is to harness the massive digital infrastructure being built across India. We plan to integrate deep **OSINT (Open Source Intelligence)** pipelines and **non-invasive surveillance** techniques to proactively find hidden networks. By leveraging public information and growing digital footprints, Constellation will provide unprecedented visibility into emerging syndicates.
+
 ```
 ┌─────────────────────────────────────────────────────────────────────────────┐
 │                            PRESENTATION LAYER                               │

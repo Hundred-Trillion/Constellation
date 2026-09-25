@@ -115,10 +115,10 @@ SIH26189 is listed under the **Blockchain & Cybersecurity** theme. Rather than i
 
 ---
 
-## 🖼️ Image Architecture & Zero-Supabase Permanent Strategy
+## 🖼️ Image Architecture & Local-First Permanent Strategy
 
 ### The Free Cloud Problem
-Free-tier cloud storage services (such as Supabase free tier) automatically pause, sleep, or delete files after 7 days of inactivity. If an investigative platform relies on ephemeral cloud URLs, evidence photos, CCTV captures, and suspect mugshots **break and return HTTP 404 during hackathon evaluation or live trials**.
+Free-tier cloud storage services automatically pause, sleep, or delete files after 7 days of inactivity. If an investigative platform relies on ephemeral cloud URLs, evidence photos, CCTV captures, and suspect mugshots **break and return HTTP 404 during hackathon evaluation or live trials**.
 
 ### Constellation's Resilient Local-First Strategy (Zero External Dependencies)
 To ensure **100% permanent uptime**, Constellation provides native local static storage:

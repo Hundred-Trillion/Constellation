@@ -21,7 +21,7 @@
    - [3.6 Hidden Link Discovery Engine](#36-hidden-link-discovery-engine)
    - [3.7 Byomkesh Neural Reasoning Agent (LangGraph)](#37-byomkesh-neural-reasoning-agent-langgraph)
    - [3.8 Cryptographic HMAC-SHA256 Ledger (BNSS Sec 63)](#38-cryptographic-hmac-sha256-ledger-bnss-sec-63)
-4. [Image Strategy: Zero-Supabase Permanent Mode vs Cloud Buckets](#4-image-strategy-zero-supabase-permanent-mode-vs-cloud-buckets)
+4. [Image Strategy: Local-First Permanent Mode vs Cloud Buckets](#4-image-strategy-local-first-permanent-mode-vs-cloud-buckets)
 5. [Security & Zero-Secrets Enforcement](#5-security--zero-secrets-enforcement)
 6. [Testing & Verification Suite](#6-testing--verification-suite)
 7. [API Reference & Route Table](#7-api-reference--route-table)
@@ -30,7 +30,7 @@
 
 ## 1. Architectural Blueprint
 
-Constellation translates unstructured and structured investigative records into an **evidence-aware, temporal knowledge graph** accessible through a desktop-class interactive canvas:
+Constellation translates unstructured and structured investigative records into an **evidence-aware, temporal knowledge graph** accessible through a desktop-class interactive canvas. It emphasizes **Seamless Navigation** and features our **Flagship Collaborative AI-Human Workspace**, where the Byomkesh AI copilot and human investigators work in tandem. Additionally, our **Future Vision** incorporates leveraging India's digital infrastructure for advanced **OSINT** and non-invasive surveillance:
 
 ```
 ┌────────────────────────────────────────────────────────────────────────┐
@@ -205,10 +205,10 @@ npm run dev
 
 ---
 
-## 4. Image Strategy: Zero-Supabase Permanent Mode vs Cloud Buckets
+## 4. Image Strategy: Local-First Permanent Mode vs Cloud Buckets
 
-### Why Constellation Operates Without Supabase by Default
-Free-tier database storage (like Supabase free tier) goes into hibernation after 7 days of inactivity. If a hackathon project links all evidence images to ephemeral Supabase bucket URLs, the entire user interface breaks as soon as the project pauses!
+### Why Constellation Operates Without Cloud Buckets by Default
+Free-tier database storage goes into hibernation after 7 days of inactivity. If a hackathon project links all evidence images to ephemeral bucket URLs, the entire user interface breaks as soon as the project pauses!
 
 Constellation guarantees **100% permanent image persistence** using two local-first zero-cost methods:
 
@@ -244,41 +244,7 @@ The FastAPI backend serves authentic evidence files directly from disk via SHA-2
 ```
 
 ### Method 3: Supabase Storage Cloud Buckets (Optional Extension)
-If an enterprise client requires remote Supabase object storage, execute this SQL script in the **Supabase SQL Editor**:
-
-```sql
--- 1. Create the public evidence bucket
-INSERT INTO storage.buckets (id, name, public, file_size_limit, allowed_mime_types)
-VALUES (
-  'evidence_images',
-  'evidence_images',
-  true,
-  10485760, -- 10 MB limit
-  ARRAY['image/jpeg', 'image/png', 'image/webp']
-)
-ON CONFLICT (id) DO UPDATE SET public = true;
-
--- 2. Open read access to all users & evaluators
-CREATE POLICY "Public Read Access"
-ON storage.objects FOR SELECT
-TO public
-USING (bucket_id = 'evidence_images');
-
--- 3. Permit authenticated uploads
-CREATE POLICY "Permit Uploads"
-ON storage.objects FOR INSERT
-TO authenticated, anon
-WITH CHECK (bucket_id = 'evidence_images');
-```
-
-Then configure the credentials in your local `.env`:
-```env
-SUPABASE_URL=https://wgfzsrpmmdmbmojakjns.supabase.co
-NEXT_PUBLIC_SUPABASE_URL=https://wgfzsrpmmdmbmojakjns.supabase.co
-SUPABASE_ANON_KEY=sb_publishable_3roS27XlbPwLZJKcwO8eiA_UxdEXxyx
-NEXT_PUBLIC_SUPABASE_ANON_KEY=sb_publishable_3roS27XlbPwLZJKcwO8eiA_UxdEXxyx
-SUPABASE_PROJECT_ID=wgfzsrpmmdmbmojakjns
-```
+> **Note:** For Supabase storage setup and cloud configuration, please refer to [SUPABASE_SETUP.md](SUPABASE_SETUP.md).
 
 ---
 
