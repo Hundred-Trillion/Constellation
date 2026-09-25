@@ -1,0 +1,89 @@
+Business Source License 1.1 (OpenBUSL / BSL)
+
+Copyright © 2026 Adithya Srivatsa. All Rights Reserved.
+
+Parameters:
+
+Licensor:               Adithya Srivatsa
+Licensed Work:          Constellation Intelligence Platform (including the Byomkesh 
+                        LangGraph Neural Reasoning Co-Pilot, Autonomous Research Engine,
+                        Dual-Engine Graph Resilience Store, HMAC-SHA256 Forensic Audit
+                        Ledger, and Neobrutalist Investigation Operations Canvas)
+Change Date:            None (Perpetual OpenBUSL; remains in effect indefinitely unless 
+                        and until expressly modified or relicensed in writing solely 
+                        by the Licensor, Adithya Srivatsa)
+Change License:         None / At the Sole Discretion of Adithya Srivatsa
+
+Additional Use Grant:   
+You may make use of the Licensed Work for non-commercial, personal, academic, 
+internal evaluation, security research, and testing purposes without payment. 
+
+Strict Commercial and Production Limitations:
+You may not make use of the Licensed Work in production for commercial purposes, 
+nor may you host, license, sublicense, sell, or offer the Licensed Work as a 
+cloud service, Software-as-a-Service (SaaS), Platform-as-a-Service (PaaS), 
+or managed intelligence/forensic investigation offering to third parties, 
+without an express, separate commercial license agreement executed in writing 
+by the Licensor (Adithya Srivatsa).
+
+-------------------------------------------------------------------------------
+TERMS AND CONDITIONS
+
+1. PREAMBLE & RESERVATION OF PROPRIETARY RIGHTS
+The Licensed Work is protected by copyright, intellectual property, and trade 
+secret laws internationally. Except for the limited licenses expressly granted 
+herein, the Licensor, Adithya Srivatsa, expressly RESERVES ALL RIGHTS, TITLE, 
+AND INTEREST in and to the Licensed Work, including but not limited to all 
+algorithmic architectures, graph query engines, neural reasoning state machines, 
+user interfaces, cryptographic provenance ledgers, and documentation.
+
+2. GRANT OF LICENSE
+Subject to the terms, conditions, and limitations of this License, the Licensor 
+hereby grants you a worldwide, royalty-free, non-exclusive, non-transferable, 
+non-sublicensable right to copy, modify, create derivative works of, display, 
+and run the Licensed Work solely for:
+   (a) Non-commercial evaluation, development, and internal testing;
+   (b) Educational, scholarly, and academic peer review;
+   (c) Non-production forensic experimentation; and
+   (d) Any purposes specifically permitted under the Additional Use Grant above.
+
+3. NOTICE AND ATTRIBUTION REQUIREMENTS
+You must ensure that all copies, modifications, and partial distributions of 
+the Licensed Work prominently retain:
+   (a) The original copyright notice: "Copyright © 2026 Adithya Srivatsa. All Rights Reserved.";
+   (b) This License in its entirety; and
+   (c) Clear attribution to Adithya Srivatsa as the original author and architect.
+
+4. COMMERCIAL RESTRICTIONS & VIOLATIONS
+Any commercial deployment, commercial redistribution, managed service provision, 
+or unpermitted production operation of the Licensed Work without an express, 
+bilateral commercial contract signed by Adithya Srivatsa constitutes an 
+immediate, material breach of this License and willful copyright infringement 
+subject to statutory damages, injunctive relief, and all legal remedies available 
+under domestic and international intellectual property law.
+
+5. PERPETUAL DURATION & SOLE DISCRETION OF LICENSOR
+Notwithstanding any conventional transition provisions in other Business Source Licenses, 
+this License does NOT automatically transition, expire, or convert to any open-source or 
+alternative license after any predetermined date or time period. 
+
+The terms, conditions, permitted use boundaries, and commercial prohibitions of this 
+OpenBUSL license shall remain in perpetual full force and effect indefinitely. 
+Any future transition, amendment, relicensing, or adoption of any alternative license 
+may only be executed at the sole discretion of, and via an express written instrument 
+signed personally by, the Licensor, Adithya Srivatsa.
+
+6. DISCLAIMER OF WARRANTIES & LIMITATION OF LIABILITY
+THE LICENSED WORK IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR 
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS 
+FOR A PARTICULAR PURPOSE, TITLE, AND NON-INFRINGEMENT. IN NO EVENT SHALL THE 
+LICENSOR, ADITHYA SRIVATSA, BE LIABLE FOR ANY CLAIM, DAMAGES, LOSS OF DATA, 
+SECURITY INCIDENTS, BUSINESS INTERRUPTION, OR OTHER LIABILITY, WHETHER IN AN 
+ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF, OR IN CONNECTION 
+WITH THE LICENSED WORK OR THE USE OR OTHER DEALINGS IN THE LICENSED WORK.
+
+For commercial licensing, enterprise deployment rights, or institutional inquiries, 
+contact the Licensor:
+Adithya Srivatsa
+GitHub: @adithyasrivatsa / @Hundred-Trillion
+Email: hello@adithyasrivatsa.in
