@@ -153,7 +153,7 @@ UI captures and demonstration stills are located in the [screenshots/](file:///c
 
 To test the application immediately without entering credentials:
 
-1. Open the [Live Web Application](https://constellation-platform.netlify.app) (or `http://localhost:5173` locally).
+1. Open the [Live Web Application](https://constellation-sih.netlify.app) (or `http://localhost:5173` locally).
 2. On the login gateway, notice the **animated pink callout and bouncing arrow** pointing directly to **`DEMO ACCESS`**.
 3. Click either the **arrow** or the **`DEMO ACCESS`** button.
 4. You will be authenticated immediately with Chief Intelligence Director privileges (`admin`), loaded into the live **Case 102 (Operation Silver Dune)** workspace with pre-seeded investigative intelligence.

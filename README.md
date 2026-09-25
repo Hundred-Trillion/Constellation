@@ -15,7 +15,7 @@ Built for **Smart India Hackathon (Problem Statement SIH26189)** — Ministry of
 **Lead Developer:** Nanduri Eknadha Adithya Srivatsa
 - Website: [adithyasrivatsa.in](http://adithyasrivatsa.in)
 - Email: [hello@adithyasrivatsa.in](mailto:hello@adithyasrivatsa.in)
-- GitHub: [@adithyasrivatsa](https://github.com/adithyasrivatsa) · [@Hundred-Trillion](https://github.com/Hundred-Trillion)
+- GitHub: [@Hundred-Trillion](https://github.com/Hundred-Trillion)
 
 **Team RevengerZ** (Team ID: 166233) — Vidya Jyothi Institute of Technology (VJIT), Hyderabad
 - **Team Leader:** Gunji Chaithra (`gunjichaithra@gmail.com`)
@@ -35,7 +35,7 @@ The frontend UI is deployed as a static site on edge CDNs. The backend API runs 
 
 | Platform | URL | Notes |
 | :--- | :--- | :--- |
-| **Netlify** | [constellation-platform.netlify.app](https://constellation-platform.netlify.app) | Static frontend only |
+| **Netlify** | [constellation-sih.netlify.app](https://constellation-sih.netlify.app) | Static frontend only |
 | **Vercel** | [frontend-eight-flax-94.vercel.app](https://frontend-eight-flax-94.vercel.app) | Static frontend only |
 
 > **Note:** These deployments serve the frontend UI only. For full functionality (AI queries, evidence ingestion, audit verification), run the backend locally — see [Quick Start](#quick-start).

@@ -17,7 +17,7 @@ Constellation provides a single launcher script that automatically verifies depe
 - **Frontend**: [http://localhost:5173](http://localhost:5173)
 - **Backend API**: [http://127.0.0.1:8000/api](http://127.0.0.1:8000/api)
 - **Interactive API Documentation**: [http://127.0.0.1:8000/docs](http://127.0.0.1:8000/docs)
-- **Live Netlify Production**: [https://constellation-platform.netlify.app](https://constellation-platform.netlify.app)
+- **Live Netlify Production**: [https://constellation-sih.netlify.app](https://constellation-sih.netlify.app)
 
 ---
 
