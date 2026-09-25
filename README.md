@@ -2,7 +2,7 @@
 ### SIH26189 — Ministry of Home Affairs (MHA) / NCRB
 
 [![License: BUSL-1.1](https://img.shields.io/badge/License-BUSL--1.1-red.svg)](LICENSE)
-[![SIH Problem ID](https://img.shields.io/badge/SIH26189-MHA%20%2F%20NCRB-orange)](SIH_HACKATHON.md)
+[![SIH Problem ID](https://img.shields.io/badge/SIH26189-MHA%20%2F%20NCRB-orange)](docs/SIH_HACKATHON.md)
 
 Constellation is a forensic investigation and graph analysis platform for mapping criminal networks. It combines a graph database, a tamper-evident audit log, and an AI reasoning assistant into a desktop-style web interface.
 
@@ -25,7 +25,7 @@ Built for **Smart India Hackathon (Problem Statement SIH26189)** — Ministry of
 - Daya Sai Charan (`dayasaicharan79@gmail.com`)
 - Manigila Rohan Kumar Reddy (`rohanbabu2007@gmail.com`)
 
-For hackathon evaluation details, see [SIH_HACKATHON.md](SIH_HACKATHON.md).
+For hackathon evaluation details, see [SIH_HACKATHON.md](docs/SIH_HACKATHON.md).
 
 ---
 
@@ -43,6 +43,21 @@ The frontend UI is deployed as a static site on edge CDNs. The backend API runs 
 ### Demo Access
 
 On the login screen, click the **DEMO ACCESS** button to enter the workspace as an admin user with pre-seeded investigative data (Case 102 — Silver Dune).
+
+---
+
+## What Exactly We Do & What Makes Us Unique
+
+Constellation goes beyond simple graph visualization by integrating a secure, tamper-evident audit ledger with advanced AI reasoning. While most criminal network tools just draw spiderwebs from uploaded CSVs, we provide a complete intelligence platform that handles dirty data entity resolution, temporal dynamics, and legal evidentiary admissibility. Our uniqueness lies in merging forensic rigor with an intuitive, dynamic user experience.
+
+### Flagship Idea: Collaborative AI-Human Workspace
+Our flagship feature is the **Workspace**, a shared environment where human investigators and our AI agent (Byomkesh) work together in real-time. Instead of replacing the investigator, the AI acts as a co-pilot—retrieving evidence, pointing out contradictions, and constructing explanations—while the human guides the strategy and validates findings. 
+
+### Creative Freedom: Seamless Navigation
+We embraced creative freedom to ensure **Seamless Navigation** across the platform. The interface features an interactive investigation canvas with fluid linkages, smooth transitions, and a modern aesthetic that prioritizes speed and clarity, making complex network analysis feel effortless.
+
+### Future Vision: OSINT & Non-Invasive Surveillance
+Our future vision for Constellation is to leverage India's expansive and growing digital infrastructure. We aim to integrate advanced Open Source Intelligence (OSINT) capabilities and non-invasive surveillance techniques to map out hidden networks. By analyzing vast amounts of public information and digital footprints, the platform will help agencies discover complex syndicates and track illicit activities proactively.
 
 ---
 
@@ -151,7 +166,7 @@ Key variables:
 - `JWT_SECRET_KEY` — secret for signing auth tokens
 - `HMAC_SECRET_KEY` — secret for the audit ledger hash chain
 
-For full developer workflows and API reference, see [DEVELOPERS.md](DEVELOPERS.md) and [STARTUP.md](STARTUP.md).
+For full developer workflows and API reference, see [DEVELOPERS.md](docs/DEVELOPERS.md) and [STARTUP.md](docs/STARTUP.md).
 
 ---
 
@@ -190,10 +205,7 @@ For full developer workflows and API reference, see [DEVELOPERS.md](DEVELOPERS.m
 ├── PPTs/                         # Presentation files
 ├── evidence_vault/               # Sample forensic evidence files
 ├── evidence_store/               # Active evidence file storage
-├── docs/                         # API reference, architecture docs, developer guide
-├── SIH_HACKATHON.md              # SIH evaluation dossier
-├── DEVELOPERS.md                 # Developer guide
-├── STARTUP.md                    # Setup & operations manual
+├── docs/                         # All markdown documentation
 ├── start.sh                      # Single-command launcher
 ├── LICENSE                       # Business Source License 1.1
 └── .env.example                  # Environment variable template

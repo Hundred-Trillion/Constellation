@@ -40,6 +40,15 @@ Manual crime network collation is slow, labor-intensive, and fundamentally vulne
 
 **Constellation** solves SIH26189 not as a black-box "prediction" gimmick, but as an **AI-Assisted Investigative Graph Intelligence Platform** designed specifically for the field investigator.
 
+### 🌟 What Makes Us Unique & Our Flagship Idea
+What sets Constellation apart is our **Flagship Idea: The Collaborative AI-Human Workspace**. We believe in synergy rather than replacement. The workspace allows human intelligence to direct the investigation while the AI (Byomkesh) handles heavy data retrieval, multi-hop reasoning, and contradiction checks. 
+
+### 🎨 Creative Freedom & Seamless Navigation
+We exercised special creative freedom to build a platform that doesn't feel like archaic enterprise software. Our focus on **Seamless Navigation** ensures that investigators can fluidly move between the spatial graph canvas, evidence dossiers, and AI chat without losing context. 
+
+### 🚀 Future Vision: Digital Infrastructure & OSINT
+Our future vision for Constellation is to harness the massive digital infrastructure being built across India. We plan to integrate deep **OSINT (Open Source Intelligence)** pipelines and **non-invasive surveillance** techniques to proactively find hidden networks. By leveraging public information and growing digital footprints, Constellation will provide unprecedented visibility into emerging syndicates.
+
 ---
 
 ## 🏛️ Direct Mapping: The 6 MHA / NCRB Requirements
@@ -121,56 +130,7 @@ To ensure **100% permanent uptime**, Constellation provides native local static 
    - The FastAPI backend stores ingested evidentiary files on disk, computes their SHA-256 digest on upload, and serves them via static route `/api/evidence/file/{evidence_id}`.
    - Files remain persistent on the local machine or Docker volume forever.
 
-### Supabase Storage Setup (For Cloud-Hosted Configurations)
-If an evaluator or agency desires cloud object storage via Supabase, the backend and frontend support Supabase Storage. Below is the SQL to configure the storage bucket and access policies:
-
-#### 1. SQL Code to Create the Bucket
-Execute the following in the **Supabase SQL Editor**:
-
-```sql
--- Step 1: Create a public storage bucket for crime evidence
-INSERT INTO storage.buckets (id, name, public, file_size_limit, allowed_mime_types)
-VALUES (
-  'evidence_images',
-  'evidence_images',
-  true,
-  10485760, -- 10MB limit per image
-  ARRAY['image/jpeg', 'image/png', 'image/webp', 'image/gif']
-)
-ON CONFLICT (id) DO UPDATE SET public = true;
-
--- Step 2: Allow public read access to evidence images
-CREATE POLICY "Public Read Access for Evidence Images"
-ON storage.objects FOR SELECT
-TO public
-USING (bucket_id = 'evidence_images');
-
--- Step 3: Allow authenticated investigators to upload evidence
-CREATE POLICY "Investigators Can Upload Evidence Images"
-ON storage.objects FOR INSERT
-TO authenticated, anon
-WITH CHECK (bucket_id = 'evidence_images');
-
--- Step 4: Allow updating evidence objects
-CREATE POLICY "Investigators Can Update Evidence Images"
-ON storage.objects FOR UPDATE
-TO authenticated, anon
-USING (bucket_id = 'evidence_images');
-```
-
-#### 2. Supabase Cloud Configuration Keys
-
-> **Note:** Supabase credentials are loaded from your `.env` file and are not committed to the repository. Copy `.env.example` and fill in your own project values.
-
-```env
-SUPABASE_URL=<your-supabase-project-url>
-NEXT_PUBLIC_SUPABASE_URL=<your-supabase-project-url>
-SUPABASE_ANON_KEY=<your-supabase-anon-key>
-NEXT_PUBLIC_SUPABASE_ANON_KEY=<your-supabase-anon-key>
-SUPABASE_PROJECT_ID=<your-supabase-project-id>
-```
-
-> **Why Local Mode is Default:** Constellation uses the local static storage mode by default so that judges testing the application never encounter a dead link or expired cloud bucket!
+> **Note:** For Supabase storage setup and cloud configuration, please refer to [docs/SUPABASE_SETUP.md](SUPABASE_SETUP.md).
 
 ---
 
