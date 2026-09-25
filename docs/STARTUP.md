@@ -13,7 +13,7 @@ This guide provides end-to-end setup and operating instructions for running Cons
 
 The frontend interface is deployed and active globally on edge networks:
 - **Netlify Edge Production:** [https://constellation-platform.netlify.app](https://constellation-platform.netlify.app)
-- **Vercel Global Production:** [https://frontend-rho-ivory-12.vercel.app](https://frontend-rho-ivory-12.vercel.app)
+- **Vercel Global Production:** [https://frontend-eight-flax-94.vercel.app](https://frontend-eight-flax-94.vercel.app)
 
 ---
 

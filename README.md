@@ -36,7 +36,7 @@ The frontend UI is deployed as a static site on edge CDNs. The backend API runs 
 | Platform | URL | Notes |
 | :--- | :--- | :--- |
 | **Netlify** | [constellation-platform.netlify.app](https://constellation-platform.netlify.app) | Static frontend only |
-| **Vercel** | [frontend-rho-ivory-12.vercel.app](https://frontend-rho-ivory-12.vercel.app) | Static frontend only |
+| **Vercel** | [frontend-eight-flax-94.vercel.app](https://frontend-eight-flax-94.vercel.app) | Static frontend only |
 
 > **Note:** These deployments serve the frontend UI only. For full functionality (AI queries, evidence ingestion, audit verification), run the backend locally — see [Quick Start](#quick-start).
 
